@@ -3,5 +3,13 @@ from nose.tools import ok_, eq_
 
 def test_process_move():
 	"""Testing process_move"""
-	ok_(game.process_move(1)==False)
-	ok_(game.process_move("a"))
+	ok_(game.process_move(1)==False, "Invalid move")
+	ok_(game.process_move("a") != False, "Valid move")
+
+def test_len_of_board():
+	"""Testing length of board"""
+	ok_(len(game.x) == 4, "Length must be 4")
+
+def test_type_of_board_variable():
+	"""Testing type of board variable"""
+	ok_(isinstance(game.x, list), "Instance of list")
