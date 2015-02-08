@@ -76,19 +76,20 @@ def rotate(n):  # rotate 90 degrees n times
         for i in range(0, 4):
             for j in range(0, 4):
                 x[i][3-j] = y[j][i]
-
 x = [[0 for c in range(4)] for r in range(4)]
 
 add_number()
-while True:
-    print_board()
-    move = read_input()
-    moved = process_move(move)
-    if moved:
-        add_number()
-    if (max_value() >= 2048):
-        print "You win"
-        break
-    if (count_zeroes == 0):
-        print "You lost"
-        break
+
+if __name__ == '__main__':
+	while True:
+	    print_board()
+	    move = read_input()
+	    moved = process_move(move)
+	    if moved:
+		add_number()
+	    if (max_value() >= 2048):
+		print "You win"
+		break
+	    if (count_zeroes == 0):
+		print "You lost"
+		break
