@@ -5,4 +5,5 @@ setup(name='python2048',
       author='lowks',
       author_email='kianseong@gmail.com',
       test_suite='nose.collector',
+      license='MIT',
       url='https://github.com/lowks/python2048',)
