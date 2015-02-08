@@ -13,3 +13,8 @@ def test_len_of_board():
 def test_type_of_board_variable():
 	"""Testing type of board variable"""
 	ok_(isinstance(game.x, list), "Instance of list")
+
+def test_initial_max_value():
+	"""Testing initial max value"""
+	ok_(game.max_value()==2, 
+	    "Initial max value always 2")
