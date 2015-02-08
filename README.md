@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/lowks/python2048.png?branch=master)](https://travis-ci.org/lowks/python2048)
 # python2048
 Python implementaion of 2048 game
 
